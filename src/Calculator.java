@@ -10,29 +10,27 @@ public class Calculator {
 			float num1;
 				
 			System.out.print( "Enter Number A : ");
-			num1 = input.nextInt();
-							
+			num1 = input.nextFloat();
 			float num2;
 			
 			System.out.print( "Enter Number B : ");
-			num2 = input.nextInt();
+			num2 = input.nextFloat();
 			
-			System.out.println("Enter your selection:\n1 : A + B\n2 : A - B\n3 : A * B\n4 : A / B\n");
-			int choose = input.nextInt();
+			System.out.println("Enter your operations: + - * /");
+			char choose = op.next().charAt(0);
 			
 			float danswer = num1 / num2;
-					if (choose == 1)
+					if (choose == '+')
 					{ System.out.println("Your answer is: " + (num1 + num2)); }
-					else if (choose == 2)
+					else if (choose == '-')
 					{ System.out.println("Your answer is: " + (num1 - num2)); }
-					else if (choose == 3)
+					else if (choose == '*')
 					{ System.out.println("Your answer is: " + (num1 * num2)); }
-					else if (choose == 4)
+					else if (choose == '/')
+
 					{ System.out.println("Your answer is: " + danswer); }
 							
 					}
 			
 			
 }
-
-// Please update with the latest code
