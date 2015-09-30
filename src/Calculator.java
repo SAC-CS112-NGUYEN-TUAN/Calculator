@@ -20,14 +20,13 @@ public class Calculator {
 			
 			float danswer = num1 / num2;
 					if (choose.equals("plus") )
-					{ System.out.println("Your answer is: " + (num1 + num2)); }
+					{ System.out.println("Your answer is: "+ num1 + "+" + num2 + "=" +(num1 + num2)); }  //I think my println is a mess , is there anyway to improve it ?
 					else if (choose.equals("minus") )
-					{ System.out.println("Your answer is: " + (num1 - num2)); }
+					{ System.out.println("Your answer is: "+ num1 + "-" + num2 + "=" +(num1 - num2)); }
 					else if (choose.equals("mult") )
-					{ System.out.println("Your answer is: " + (num1 * num2)); }
+					{ System.out.println("Your answer is: "+ num1 + "*" + num2 + "=" +(num1 * num2)); }
 					else if (choose.equals("div") )      // I still wonder why (choose == ("div"))not work
-
-					{ System.out.println("Your answer is: " + danswer); }
+					{ System.out.println("Your answer is: "+ num1 + "/" + num2 + "=" +(num1 / num2)); }
 							
 					}
 			
